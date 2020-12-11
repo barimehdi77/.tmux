@@ -20,7 +20,7 @@ existing `~/.tmux.conf` first)
 
 ```
 $ cd
-$ git clone https://github.com/gpakosz/.tmux.git
+$ git clone https://github.com/barimehdi77/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 ```
@@ -30,7 +30,7 @@ proper `~/.tmux.conf` symlink and you copy the `.tmux.conf.local` sample file in
 your home directory:
 
 ```
-$ git clone https://github.com/gpakosz/.tmux.git /path/to/oh-my-tmux
+$ git clone https://github.com/barimehdi77/.tmux.git
 $ ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
 $ cp /path/to/oh-my-tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
@@ -164,10 +164,10 @@ This configuration uses the following bindings:
  - `<prefix> Tab` brings you to the last active window
 
  - `<prefix> -` splits the current pane vertically
- - `<prefix> _` splits the current pane horizontally
- - `<prefix> h`, `<prefix> j`, `<prefix> k` and `<prefix> l` let you navigate
+ - `<prefix> |` splits the current pane horizontally
+ - `<prefix> right-arrow`, `<prefix> left-arrow`, `<prefix> up-arrow` and `<prefix> down-arrow` let you navigate
    panes ala Vim
- - `<prefix> H`, `<prefix> J`, `<prefix> K`, `<prefix> L` let you resize panes
+ - `<prefix> alt+right-arrow`, `<prefix> alt+left-arrow`, `<prefix> alt+up-arrow`, `<prefix> alt+down-arrow` let you resize panes
  - `<prefix> <` and `<prefix> >` let you swap panes
  - `<prefix> +` maximizes the current pane to a new window
 
@@ -180,10 +180,6 @@ This configuration uses the following bindings:
  - `<prefix> b` lists the paste-buffers
  - `<prefix> p` pastes from the top paste-buffer
  - `<prefix> P` lets you choose the paste-buffer to paste from
-
-Additionally, `copy-mode-vi` matches [my own Vim configuration][]
-
-[my own Vim configuration]: https://github.com/gpakosz/.vim.git
 
 Bindings for `copy-mode-vi`:
 
